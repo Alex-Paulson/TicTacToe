@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int space[3][3]={{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+char space[3][3]={{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 int row;
 int column;
 char token= 'x';
-bool tie=false;
-string n1='';
-string n2='';
+bool tie =false;
+string n1="";
+string n2="";
 void functionOne(){
 
 
@@ -104,7 +104,7 @@ functionOne();
 
 bool functionThree()
 {
-    for(int i=0;i<3;1++)
+    for(int i=0;i<3;i++)
     {
         if(space[i][0]==space[i][1] && space[i][0]==space[i][2] || space[0][i]==space[1][i] && space[0][i]==space[2][i])
         return true;
